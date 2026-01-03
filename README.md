@@ -1,9 +1,10 @@
-## TURBO TRACK 2D
+## TURBO TRACK 2D Plus
+
+Fork of [TurboTrack2D](https://github.com/h8man/TurboTrack2D) with improved rendering, collision detection, vehicles on the road and more.
 
 Pseudo 3D Racing.
-60 FPS with no shaders.
 
-![print screen](image01.png)
+![print screen](img/screenshot.png)
 
 ### Prototype of 2D arcade style racing game
 

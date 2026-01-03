@@ -1,0 +1,1086 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd58ce2d624a15439d1a943c062995f, type: 3}
+  m_Name: DefaultTrack
+  m_EditorClassIdentifier: 
+  segments: 3500
+  roadWidth: 1500
+  segmentLength: 200
+  trackHeight: 1800
+  roadPropertiesModifiers:
+  - label: right turn
+    levelModifierType: 1
+    segments: {x: 800, y: 1200}
+    curve: 0.6
+    h: 0
+    oscillationNodes: 0
+    frequency: 1
+    worldObjects: []
+  - label: hill
+    levelModifierType: 1
+    segments: {x: 1250, y: 2300}
+    curve: 0
+    h: 0.033333335
+    oscillationNodes: 10
+    frequency: 1
+    worldObjects: []
+  - label: left turn
+    levelModifierType: 1
+    segments: {x: 1600, y: 2100}
+    curve: -0.7
+    h: 0
+    oscillationNodes: 0
+    frequency: 1
+    worldObjects: []
+  - label: right turn around houses
+    levelModifierType: 1
+    segments: {x: 2500, y: 2700}
+    curve: 0.6
+    h: 0.04
+    oscillationNodes: 2
+    frequency: 1
+    worldObjects: []
+  - label: left turn around houses
+    levelModifierType: 1
+    segments: {x: 3100, y: 3400}
+    curve: -0.6
+    h: -0.4
+    oscillationNodes: 3
+    frequency: 1
+    worldObjects: []
+  - label: turn
+    levelModifierType: 1
+    segments: {x: 1300, y: 1500}
+    curve: 0.8
+    h: 0
+    oscillationNodes: 0
+    frequency: 1
+    worldObjects: []
+  worldObjectsModifiers:
+  - label: First Tunnel
+    levelModifierType: 2
+    segments: {x: 0, y: 200}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 10
+    worldObjects:
+    - x: 0
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 5a90ad5f3f306d54da77a1f1b2dbcffa, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 0
+        colliderLength: 200
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: crowd hill right
+    levelModifierType: 2
+    segments: {x: 200, y: 500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 50
+    worldObjects:
+    - x: 4
+      xRandomVariation: 0
+      flipX: 1
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 6c2dbb2de16fb4e6f8cfe2aef3a95cc5, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 200
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: crowd hill left
+    levelModifierType: 2
+    segments: {x: 200, y: 500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 50
+    worldObjects:
+    - x: -4
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 6c2dbb2de16fb4e6f8cfe2aef3a95cc5, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: RightCrowd
+    levelModifierType: 0
+    segments: {x: 240, y: 400}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 40
+    worldObjects:
+    - x: 4
+      xRandomVariation: 0
+      flipX: 1
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: a9d3317f775048149947b39c26701373, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: Left crowd
+    levelModifierType: 0
+    segments: {x: 200, y: 410}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 40
+    worldObjects:
+    - x: -4
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: a9d3317f775048149947b39c26701373, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: house
+    levelModifierType: 2
+    segments: {x: 800, y: 806}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 1
+    worldObjects:
+    - x: 2
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 11b0ce5aa62a96186b3504adcffbe97c, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: backgroundTreesLeft
+    levelModifierType: 2
+    segments: {x: 500, y: 10500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 55
+    worldObjects:
+    - x: 7.06
+      xRandomVariation: 0.5
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 2bc3f3a01601069629d7cd0bab9444cf, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: pines3
+    levelModifierType: 2
+    segments: {x: 0, y: 10500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 25
+    worldObjects:
+    - x: 5
+      xRandomVariation: 0.1
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: e8ca95d87859335d9a08af0c3aaf237b, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: pines1
+    levelModifierType: 2
+    segments: {x: 500, y: 800}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 53
+    worldObjects:
+    - x: 10
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: e8ca95d87859335d9a08af0c3aaf237b, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: pinesLeft
+    levelModifierType: 2
+    segments: {x: 0, y: 10500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 67
+    worldObjects:
+    - x: -9
+      xRandomVariation: 0.2
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: e8ca95d87859335d9a08af0c3aaf237b, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: grass
+    levelModifierType: 2
+    segments: {x: 500, y: 2300}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 10
+    worldObjects:
+    - x: -2.5
+      xRandomVariation: 0.3
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 8d821d36de0ee47c8ac045e0382141f2, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 0
+        colliderLength: 200
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: grass4
+    levelModifierType: 2
+    segments: {x: 500, y: 10500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 13
+    worldObjects:
+    - x: 4
+      xRandomVariation: 0.3
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 8d821d36de0ee47c8ac045e0382141f2, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 0
+        colliderLength: 200
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: grass3
+    levelModifierType: 2
+    segments: {x: 500, y: 10500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 13
+    worldObjects:
+    - x: 2
+      xRandomVariation: 0.3
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 8d821d36de0ee47c8ac045e0382141f2, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 0
+        colliderLength: 200
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: grass2
+    levelModifierType: 2
+    segments: {x: 0, y: 10500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 10
+    worldObjects:
+    - x: -5.5
+      xRandomVariation: 0.3
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 8d821d36de0ee47c8ac045e0382141f2, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 0
+        colliderLength: 200
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: x69
+    levelModifierType: 2
+    segments: {x: 620, y: 625}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 1
+    worldObjects:
+    - x: -3
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 3b37ec9ae0f976b4f8f2d141cb0b6b63, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: house left
+    levelModifierType: 2
+    segments: {x: 760, y: 770}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 1
+    worldObjects:
+    - x: -3
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 039042e7eea5a7b41b5b826ebf430ff6, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+    - x: -5.5
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 43a200206d1c6014b938daff786b8b80, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: backgroundTreesLeft
+    levelModifierType: 2
+    segments: {x: 500, y: 10500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 40
+    worldObjects:
+    - x: -7.06
+      xRandomVariation: 0.5
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 2bc3f3a01601069629d7cd0bab9444cf, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: pinesRight
+    levelModifierType: 2
+    segments: {x: 0, y: 10500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 62
+    worldObjects:
+    - x: 8
+      xRandomVariation: 0.3
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: e8ca95d87859335d9a08af0c3aaf237b, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: coins2
+    levelModifierType: 2
+    segments: {x: 700, y: 800}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 15
+    worldObjects:
+    - x: 0
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 0.8
+      visibleElement:
+        visibleElementType: 1
+        sprite: {fileID: 21300000, guid: 92e7c400addf46081b2bce85e758392f, type: 3}
+        spriteSequence:
+        - {fileID: -1085004036, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1216059703, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1311149668, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1727823125, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 1123645787, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 155149618, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        frameRate: 0.22
+      pseudo3DCollider:
+        colliderType: 2
+        colliderLength: 400
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: coins3
+    levelModifierType: 2
+    segments: {x: 510, y: 600}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 20
+    worldObjects:
+    - x: -0.31
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 0.8
+      visibleElement:
+        visibleElementType: 1
+        sprite: {fileID: 21300000, guid: 92e7c400addf46081b2bce85e758392f, type: 3}
+        spriteSequence:
+        - {fileID: -1085004036, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1216059703, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1311149668, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1727823125, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 1123645787, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 155149618, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        frameRate: 0.22
+      pseudo3DCollider:
+        colliderType: 2
+        colliderLength: 400
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: oxxo
+    levelModifierType: 2
+    segments: {x: 610, y: 615}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 1
+    worldObjects:
+    - x: 2.5
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 4d9bf4dea4568cb2193cb42eb866321e, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: right turn signal
+    levelModifierType: 2
+    segments: {x: 800, y: 1200}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 8
+    worldObjects:
+    - x: -1.5
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 0.4
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 38e54e05789ae2169afed7cfbf6891c8, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 0.2, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: pines2
+    levelModifierType: 2
+    segments: {x: 1300, y: 2300}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 26
+    worldObjects:
+    - x: -2.22
+      xRandomVariation: 0.1
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: e8ca95d87859335d9a08af0c3aaf237b, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: iglesia
+    levelModifierType: 2
+    segments: {x: 1250, y: 1260}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 9
+    worldObjects:
+    - x: -2.8
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: d8c71b3146ceb2473866f83a38608b16, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: spectaculars
+    levelModifierType: 2
+    segments: {x: 1200, y: 1250}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 40
+    worldObjects:
+    - x: 1.8
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 2a3b071f05ee3a402a3fa03931224d40, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: coins3
+    levelModifierType: 2
+    segments: {x: 1200, y: 1300}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 20
+    worldObjects:
+    - x: 0.32
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 0.8
+      visibleElement:
+        visibleElementType: 1
+        sprite: {fileID: 21300000, guid: 92e7c400addf46081b2bce85e758392f, type: 3}
+        spriteSequence:
+        - {fileID: -1085004036, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1216059703, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1311149668, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1727823125, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 1123645787, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 155149618, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        frameRate: 0.22
+      pseudo3DCollider:
+        colliderType: 2
+        colliderLength: 400
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: rocks
+    levelModifierType: 2
+    segments: {x: 1480, y: 1700}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 40
+    worldObjects:
+    - x: 9
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 6c2dbb2de16fb4e6f8cfe2aef3a95cc5, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: edificio
+    levelModifierType: 2
+    segments: {x: 1550, y: 1650}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 30
+    worldObjects:
+    - x: -1.7
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: d909fe20858195ec68b38561e270b042, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: left trun
+    levelModifierType: 2
+    segments: {x: 1600, y: 2000}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 8
+    worldObjects:
+    - x: 1.5
+      xRandomVariation: 0
+      flipX: 1
+      enabled: 1
+      customSpriteScale: 0.4
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 38e54e05789ae2169afed7cfbf6891c8, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: tunnel
+    levelModifierType: 2
+    segments: {x: 2100, y: 2320}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 10
+    worldObjects:
+    - x: 0
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 5a90ad5f3f306d54da77a1f1b2dbcffa, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 0
+        colliderLength: 200
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: background buildings 2
+    levelModifierType: 2
+    segments: {x: 500, y: 4500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 70
+    worldObjects:
+    - x: 9
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: a401e1a5988538c549ad6db877e8897f, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: background buildings 1
+    levelModifierType: 2
+    segments: {x: 500, y: 4500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 25
+    worldObjects:
+    - x: -10
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: a401e1a5988538c549ad6db877e8897f, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: barrio3
+    levelModifierType: 2
+    segments: {x: 2300, y: 4750}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 150
+    worldObjects:
+    - x: 3
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 96c676fdfd849274d8552f4fff15b673, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: barrio2
+    levelModifierType: 2
+    segments: {x: 2250, y: 4500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 50
+    worldObjects:
+    - x: 3.3
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: dbf7617296864c759b6f7bf0b2b1d355, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: barrio1
+    levelModifierType: 2
+    segments: {x: 2350, y: 4500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 80
+    worldObjects:
+    - x: -3
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: cfbb33579711ca438a9833ab03790beb, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: barrio1
+    levelModifierType: 2
+    segments: {x: 2300, y: 4600}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 75
+    worldObjects:
+    - x: -3
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 10af25a348e1036309e8a963a91d7f0d, type: 3}
+        spriteSequence: []
+        frameRate: 0
+      pseudo3DCollider:
+        colliderType: 1
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: goal
+    levelModifierType: 2
+    segments: {x: 10000, y: 10002}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 1
+    worldObjects:
+    - x: -0.01
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 1
+      visibleElement:
+        visibleElementType: 0
+        sprite: {fileID: 21300000, guid: 88c6d407fbdd78b6e82a2dfad19c3ba0, type: 3}
+        spriteSequence: []
+        frameRate: 0.16
+      pseudo3DCollider:
+        colliderType: 3
+        colliderLength: 300
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: coins3
+    levelModifierType: 2
+    segments: {x: 1000, y: 1100}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 20
+    worldObjects:
+    - x: 0.31
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 0.8
+      visibleElement:
+        visibleElementType: 1
+        sprite: {fileID: 21300000, guid: 92e7c400addf46081b2bce85e758392f, type: 3}
+        spriteSequence:
+        - {fileID: -1085004036, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1216059703, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1311149668, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1727823125, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 1123645787, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 155149618, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        frameRate: 0.22
+      pseudo3DCollider:
+        colliderType: 2
+        colliderLength: 400
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: coins4
+    levelModifierType: 2
+    segments: {x: 2700, y: 2800}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 15
+    worldObjects:
+    - x: 0.35
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 0.8
+      visibleElement:
+        visibleElementType: 1
+        sprite: {fileID: 21300000, guid: 92e7c400addf46081b2bce85e758392f, type: 3}
+        spriteSequence:
+        - {fileID: -1085004036, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1216059703, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1311149668, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1727823125, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 1123645787, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 155149618, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        frameRate: 0.22
+      pseudo3DCollider:
+        colliderType: 2
+        colliderLength: 400
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: coins5
+    levelModifierType: 2
+    segments: {x: 3000, y: 3100}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 15
+    worldObjects:
+    - x: -0.35
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 0.8
+      visibleElement:
+        visibleElementType: 1
+        sprite: {fileID: 21300000, guid: 92e7c400addf46081b2bce85e758392f, type: 3}
+        spriteSequence:
+        - {fileID: -1085004036, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1216059703, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1311149668, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1727823125, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 1123645787, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 155149618, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        frameRate: 0.22
+      pseudo3DCollider:
+        colliderType: 2
+        colliderLength: 400
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  - label: coins6
+    levelModifierType: 2
+    segments: {x: 3400, y: 3500}
+    curve: 0
+    h: 0
+    oscillationNodes: 0
+    frequency: 15
+    worldObjects:
+    - x: 0
+      xRandomVariation: 0
+      flipX: 0
+      enabled: 1
+      customSpriteScale: 0.8
+      visibleElement:
+        visibleElementType: 1
+        sprite: {fileID: 21300000, guid: 92e7c400addf46081b2bce85e758392f, type: 3}
+        spriteSequence:
+        - {fileID: -1085004036, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1216059703, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1311149668, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: -1727823125, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 1123645787, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        - {fileID: 155149618, guid: 43da02e51d3a6b538af49229b713e5b5, type: 3}
+        frameRate: 0.22
+      pseudo3DCollider:
+        colliderType: 2
+        colliderLength: 400
+        colliderScale: {x: 1, y: 1}
+        colliderOffset: {x: 0, y: 0}
+  levelVehicles:
+  - amount: 1
+    speed: 8000
+    sprite: {fileID: 21300000, guid: b5030a445313a143094f0dbff85eb38d, type: 3}
+    pseudo3DCollider:
+      colliderType: 4
+      colliderLength: 200
+      colliderScale: {x: 1, y: 1}
+      colliderOffset: {x: 0, y: 0}
+  - amount: 1
+    speed: 9000
+    sprite: {fileID: 21300000, guid: 3dd7fde46024e6f83aca2cac4507ab6a, type: 3}
+    pseudo3DCollider:
+      colliderType: 4
+      colliderLength: 200
+      colliderScale: {x: 1, y: 1}
+      colliderOffset: {x: 0, y: 0}
+  displacement: 500
