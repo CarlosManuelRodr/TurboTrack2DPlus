@@ -23,11 +23,18 @@ Thread to disscuss:
 
 https://forum.unity.com/threads/using-unity-to-create-pseudo-3d-graphics.378826/
 
-## Demo
+## Assets used
 
-- Arow keys to drive
-- Tab to accelerate
+Urban Landscape by ansimuz:
+https://opengameart.org/content/urban-landscape
 
-https://github.com/h8man/TurboTrack2D/releases/tag/0.1a
+Coupe' Car by Chasersgaming:
+https://opengameart.org/content/coupe-car
 
->> NOTE: All sprite graphics are placeholder graphics used here as teaching examples. Do not use or distribute these sprites!
+
+Racing Asset 'Touring Car' SMS by Chasersgaming:
+https://opengameart.org/content/racing-asset-touring-car-sms
+
+
+Spinning Coin 8-Bit Sprite by madcowj:
+https://opengameart.org/content/spinning-coin-8-bit-sprite
