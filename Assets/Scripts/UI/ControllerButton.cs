@@ -28,8 +28,8 @@ namespace UI
         [SerializeField] ControllerButtonAction controllerButtonAction;
         [SerializeField] Sprite buttonUpSprite;
         [SerializeField] Sprite buttonDownSprite;
-        
-        private bool _isPressed;
+
+        public bool IsPressed { get; private set; }
 
         /// <summary>
         /// Handle the button being pushed down.
@@ -40,13 +40,7 @@ namespace UI
             GameLogger.Debug("Pressed controller button for action: " + controllerButtonAction, this);
             
             buttonImage.sprite = buttonDownSprite;
-            _isPressed = true;
-            
-            // SwitchGears is a one-time toggle, so we keep it here and don't put it in Update
-            if (controllerButtonAction == ControllerButtonAction.SwitchGears)
-            {
-                //playerVehicle.SwitchGears();
-            }
+            IsPressed = true;
         }
 
         /// <summary>
@@ -58,13 +52,13 @@ namespace UI
             GameLogger.Debug("Released controller button for action: " + controllerButtonAction, this);
 
             buttonImage.sprite = buttonUpSprite;
-            _isPressed = false;
+            IsPressed = false;
 
         }
         
         private void Update()
         {
-            if (_isPressed)
+            if (IsPressed)
             {
                 switch (controllerButtonAction)
                 {
@@ -91,9 +85,6 @@ namespace UI
                 {
                     case ControllerButtonAction.Accelerate:
                         playerVehicle.Idle();
-                        break;
-                    case ControllerButtonAction.TurnRight:
-                        playerVehicle.GoStraight();
                         break;
                     case ControllerButtonAction.SwitchGears:
                         playerVehicle.SetGearLow();

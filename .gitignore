@@ -6,6 +6,7 @@
 /UserSettings
 /Logs
 /.idea
+/.utmp
 
 Assembly-CSharp-Editor.csproj
 Assembly-CSharp-firstpass.csproj

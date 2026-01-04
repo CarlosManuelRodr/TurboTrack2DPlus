@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5854575715733726295
 RectTransform:
   m_ObjectHideFlags: 0
@@ -349,13 +349,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7940398727485927486}
+  - component: {fileID: 8863180550113303486}
   m_Layer: 5
   m_Name: Directional
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7940398727485927486
 RectTransform:
   m_ObjectHideFlags: 0
@@ -377,6 +378,21 @@ RectTransform:
   m_AnchoredPosition: {x: 42.17, y: 18.2}
   m_SizeDelta: {x: 70.4, y: 32.8911}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8863180550113303486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4382653971989103133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac54769d5734179b325157b857cdd01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DirectionalController
+  leftButton: {fileID: 3241889876497529910}
+  rightButton: {fileID: 4201753869286864912}
+  playerVehicle: {fileID: 0}
 --- !u!1 &5206436487775325344
 GameObject:
   m_ObjectHideFlags: 0
