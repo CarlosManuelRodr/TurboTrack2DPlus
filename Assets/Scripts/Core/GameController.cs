@@ -162,8 +162,10 @@ namespace Core
             if (pauseInput.WasPressedThisFrame())
                 HandlePauseButton();
             
+        #if !UNITY_ANDROID
             if (Application.isPlaying)
                 playerVehicles.ForEach(x => x.HandleInput());
+        #endif
         }
 
         /// <summary>

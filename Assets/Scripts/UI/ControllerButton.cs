@@ -28,6 +28,8 @@ namespace UI
         [SerializeField] ControllerButtonAction controllerButtonAction;
         [SerializeField] Sprite buttonUpSprite;
         [SerializeField] Sprite buttonDownSprite;
+        
+        private bool _isPressed;
 
         /// <summary>
         /// Handle the button being pushed down.
@@ -38,23 +40,12 @@ namespace UI
             GameLogger.Debug("Pressed controller button for action: " + controllerButtonAction, this);
             
             buttonImage.sprite = buttonDownSprite;
-            switch (controllerButtonAction)
+            _isPressed = true;
+            
+            // SwitchGears is a one-time toggle, so we keep it here and don't put it in Update
+            if (controllerButtonAction == ControllerButtonAction.SwitchGears)
             {
-                case ControllerButtonAction.Accelerate:
-                    playerVehicle.Accelerate();
-                    break;
-                case ControllerButtonAction.Decelerate:
-                    playerVehicle.Decelerate();
-                    break;
-                case ControllerButtonAction.TurnLeft:
-                    playerVehicle.TurnLeft();
-                    break;
-                case ControllerButtonAction.TurnRight:
-                    playerVehicle.TurnRight();
-                    break;
-                case ControllerButtonAction.SwitchGears:
-                    playerVehicle.SwitchGears();
-                    break;
+                //playerVehicle.SwitchGears();
             }
         }
 
@@ -67,18 +58,48 @@ namespace UI
             GameLogger.Debug("Released controller button for action: " + controllerButtonAction, this);
 
             buttonImage.sprite = buttonUpSprite;
-            switch (controllerButtonAction)
-            {
-                case ControllerButtonAction.Accelerate:
-                case ControllerButtonAction.Decelerate:
-                    playerVehicle.Idle();
-                    break;
-                case ControllerButtonAction.TurnLeft:
-                case ControllerButtonAction.TurnRight:
-                    playerVehicle.GoStraight();
-                    break;
-            }
+            _isPressed = false;
 
+        }
+        
+        private void Update()
+        {
+            if (_isPressed)
+            {
+                switch (controllerButtonAction)
+                {
+                    case ControllerButtonAction.Accelerate:
+                        playerVehicle.Accelerate();
+                        break;
+                    case ControllerButtonAction.Decelerate:
+                        playerVehicle.Decelerate();
+                        break;
+                    case ControllerButtonAction.TurnLeft:
+                        playerVehicle.TurnLeft();
+                        break;
+                    case ControllerButtonAction.TurnRight:
+                        playerVehicle.TurnRight();
+                        break;
+                    case ControllerButtonAction.SwitchGears:
+                        playerVehicle.SetGearHigh();
+                        break;
+                }
+            }
+            else
+            {
+                switch (controllerButtonAction)
+                {
+                    case ControllerButtonAction.Accelerate:
+                        playerVehicle.Idle();
+                        break;
+                    case ControllerButtonAction.TurnRight:
+                        playerVehicle.GoStraight();
+                        break;
+                    case ControllerButtonAction.SwitchGears:
+                        playerVehicle.SetGearLow();
+                        break;
+                }
+            }
         }
     }
 }

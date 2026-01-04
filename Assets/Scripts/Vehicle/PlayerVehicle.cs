@@ -675,7 +675,7 @@ namespace Vehicle
         /// <summary>
         /// Set the vehicle gear as low.
         /// </summary>
-        protected void SetGearLow()
+        public void SetGearLow()
         {
             if (Gear == Gear.High)
                 SetGear(Gear.Low);
@@ -684,7 +684,7 @@ namespace Vehicle
         /// <summary>
         /// Set the vehicle gear as high.
         /// </summary>
-        protected void SetGearHigh()
+        public void SetGearHigh()
         {
             if (Gear == Gear.Low && Fuel > 0f)
                 SetGear(Gear.High);

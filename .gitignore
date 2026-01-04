@@ -4,3 +4,10 @@
 /obj
 /Assets/Plugins/TextMesh Pro
 /UserSettings
+/Logs
+/.idea
+
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp-firstpass.csproj
+Assembly-CSharp.csproj
+TurboTrack2DPlus.sln
