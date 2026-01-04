@@ -2,13 +2,21 @@
 
 Fork of [TurboTrack2D](https://github.com/h8man/TurboTrack2D) with improved rendering, collision detection, vehicles on the road and more.
 
-Pseudo 3D Racing.
+Small prototype of arcade style racing game with polygon projection technique
 
 ![print screen](img/screenshot.png)
 
-### Prototype of 2D arcade style racing game
+## How to play
+Play it here: https://carlosmanuelrodr.itch.io/turbotrack2dplus
 
-Small prototype of arcade style racing game with polygon projection technique
+Builds for Windows, Linux and Android are also available.
+
+## Features
+- Pseudo 3D renderering with texture projection
+- Collision detection
+- Vehicles on the road
+- Parallax background
+- Gamepad support
 
 Inspired by:
 
