@@ -4,7 +4,7 @@ Fork of [TurboTrack2D](https://github.com/h8man/TurboTrack2D) with improved rend
 
 Small prototype of arcade style racing game with polygon projection technique
 
-![Preview](img/Preview.gif)
+<img src="img/Preview.gif" alt="Preview" width="800">
 
 ## How to play
 Play it here: https://carlosmanuelrodr.itch.io/turbotrack2dplus
