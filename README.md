@@ -62,3 +62,6 @@ https://opengameart.org/content/car-engine-loop-96khz-4s
 
 Racing Speed Boost Sound by qubodup:
 https://opengameart.org/content/racing-speed-boost-sound
+
+Pixel Explosion (12 Frames) by JROB774:
+https://opengameart.org/content/pixel-explosion-12-frames
