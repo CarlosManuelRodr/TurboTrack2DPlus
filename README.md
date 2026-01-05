@@ -4,7 +4,7 @@ Fork of [TurboTrack2D](https://github.com/h8man/TurboTrack2D) with improved rend
 
 Small prototype of arcade style racing game with polygon projection technique
 
-![print screen](img/screenshot.png)
+![Preview](img/Preview.gif)
 
 ## How to play
 Play it here: https://carlosmanuelrodr.itch.io/turbotrack2dplus
@@ -30,6 +30,12 @@ Technical Details:
 Thread to disscuss:
 
 https://forum.unity.com/threads/using-unity-to-create-pseudo-3d-graphics.378826/
+
+## Screenshots
+
+![Player view](img/multiple_vehicles.png)
+![Screenshot](img/screenshot.png)
+![Editor view](img/scene_view.png)
 
 ## Assets used
 
