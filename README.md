@@ -56,3 +56,9 @@ https://opengameart.org/content/25d-racing-resources
 
 Golden UI - Bigger Than Ever edition by Buch:
 https://opengameart.org/content/golden-ui-bigger-than-ever-edition
+
+Car Engine Loop 96kHz, 4s by qubodup:
+https://opengameart.org/content/car-engine-loop-96khz-4s
+
+Racing Speed Boost Sound by qubodup:
+https://opengameart.org/content/racing-speed-boost-sound
