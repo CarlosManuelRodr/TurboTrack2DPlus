@@ -45,10 +45,14 @@ https://opengameart.org/content/urban-landscape
 Coupe' Car by Chasersgaming:
 https://opengameart.org/content/coupe-car
 
-
 Racing Asset 'Touring Car' SMS by Chasersgaming:
 https://opengameart.org/content/racing-asset-touring-car-sms
 
-
 Spinning Coin 8-Bit Sprite by madcowj:
 https://opengameart.org/content/spinning-coin-8-bit-sprite
+
+2.5D Racing Resources by drummyfish:
+https://opengameart.org/content/25d-racing-resources
+
+Golden UI - Bigger Than Ever edition by Buch:
+https://opengameart.org/content/golden-ui-bigger-than-ever-edition
